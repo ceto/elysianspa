@@ -10,9 +10,38 @@
   text-decoration: none;
   line-height: 1.6;
   transition: all 0.1s ease-in;
+  padding: 0 0.666em 0 0;
 
   &:hover,
   &:focus {
-    background-size: 100% 0.875em;
+    background-size: 100% 1.5em;
+    padding: 0 0.333em;
+  }
+}
+
+.btn {
+  display: inline-block;
+  line-height: 1.125;
+  padding: 0.5em 0.75em 0.5em;
+  border: 3px solid $c-primary;
+  color: inherit;
+  //background-color: $c-primary;
+  //color: #fff;
+  text-decoration: none;
+  text-align: center;
+  //font-family: $header-font-family;
+  font-weight: $global-weight-bold;
+
+  &:hover,
+  &:focus {
+    background-color: $c-primary;
+    border-color: #fff;
+    color: #fff;
+  }
+
+  small {
+    font-family: $header-font-family;
+    display: block;
+    font-size: 87.5%;
   }
 }

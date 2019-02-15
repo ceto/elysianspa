@@ -1,6 +1,10 @@
 html {
-  font-size: $global-font-size;
+  font-size: 15px;
   box-sizing: border-box;
+
+  @include breakpoint(tablet) {
+    font-size: $global-font-size;
+  }
 }
 
 body {
@@ -37,24 +41,4 @@ img {
 .screen-reader-text {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
-}
-
-.swrap {
-  overflow: hidden;
-  padding: 2vw 1rem;
-  margin: 0 auto;
-  width: 100%;
-  //max-width: $global-width;
-
-  @include breakpoint(desktop) {
-    padding-left: calc(50vw - #{$global-width/2});
-    padding-right: calc(50vw - #{$global-width/2});
-  }
-
-  &--full {
-    @include breakpoint(desktop) {
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-  }
 }
