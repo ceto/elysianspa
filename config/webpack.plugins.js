@@ -13,6 +13,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const RobotstxtPlugin = require('robotstxt-webpack-plugin').default;
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 const config = require('./site.config');
 
@@ -40,6 +41,11 @@ const optimizeCss = new OptimizeCssAssetsPlugin({
 const robots = new RobotstxtPlugin({
   sitemap: `${config.site_url}/sitemap.xml`,
   host: config.site_url,
+});
+
+// Generate CNAME
+const cname = new CnameWebpackPlugin({
+  domain: config.site_url
 });
 
 // Clean webpack
@@ -138,6 +144,7 @@ module.exports = [
   config.env === 'production' && optimizeCss,
   config.env === 'production' && robots,
   config.env === 'production' && sitemap,
+  config.env === 'production' && cname,
   config.googleAnalyticsUA && google,
   webpackBar,
   config.env === 'development' && hmr,
