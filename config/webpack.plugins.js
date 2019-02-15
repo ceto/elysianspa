@@ -13,7 +13,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const RobotstxtPlugin = require('robotstxt-webpack-plugin').default;
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
-const CnameWebpackPlugin = require('cname-webpack-plugin');
+// const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 const config = require('./site.config');
 
@@ -44,9 +44,9 @@ const robots = new RobotstxtPlugin({
 });
 
 // Generate CNAME
-const cname = new CnameWebpackPlugin({
-  domain: config.site_url
-});
+// const cname = new CnameWebpackPlugin({
+//   domain: config.site_url
+// });
 
 // Clean webpack
 const clean = new CleanWebpackPlugin(['dist'], {
@@ -144,7 +144,7 @@ module.exports = [
   config.env === 'production' && optimizeCss,
   config.env === 'production' && robots,
   config.env === 'production' && sitemap,
-  config.env === 'production' && cname,
+  // config.env === 'production' && cname,
   config.googleAnalyticsUA && google,
   webpackBar,
   config.env === 'development' && hmr,
