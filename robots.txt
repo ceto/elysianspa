@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: http://elysian.szabogabi.com/sitemap.xml
-Host: elysian.szabogabi.com
