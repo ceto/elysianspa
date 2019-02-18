@@ -34,7 +34,7 @@
     "lint:js": "./node_modules/.bin/eslint \"src/**/*.js\"",
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "build:dist": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
-    "deploy": "gh-pages-deploy"
+    "deploy": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js && node ./config/site.deploy.js"
   },
   "gh-pages-deploy": {
     "staticpath": "dist",
@@ -90,7 +90,7 @@
     "dploy": "^1.2.0",
     "enquirer": "^2.2.0",
     "figlet": "^1.2.1",
-    "gh-pages-deploy": "^0.5.1",
+    "gh-pages": "^2.0.1",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.1",
     "reset-css": "^4.0.1",
