@@ -1,10 +1,10 @@
 p {
-  margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 strong,
 b {
-  font-weight: $global-weight-bold;
+    font-weight: $global-weight-bold;
 }
 
 h1,
@@ -13,23 +13,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: $global-weight-bold;
-  font-family: $header-font-family;
-  // letter-spacing: 0.1em;
+    font-weight: $global-weight-bold;
+    font-family: $header-font-family;
+    // letter-spacing: 0.1em;
 }
 
 h1 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }

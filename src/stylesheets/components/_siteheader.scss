@@ -1,27 +1,27 @@
 .siteheader {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .siteheader__logo {
-  //display: flex;
-  align-items: center;
-  margin-right: 16px;
-  min-width: 12rem;
+    //display: flex;
+    align-items: center;
+    margin-right: 16px;
+    min-width: 12rem;
 
-  img {
-    width: 12rem;
-  }
+    img {
+        width: 12rem;
+    }
 }
 
 .siteheader__nav {
-  margin-left: auto;
+    margin-left: auto;
 }
 
 .siteheader__section {
-  //margin-left: auto;
+    //margin-left: auto;
 
-  .btn {
-    white-space: nowrap;
-  }
+    .btn {
+        white-space: nowrap;
+    }
 }

@@ -1,40 +1,46 @@
 .menu--main {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
 
-  > li {
-    margin: 0 1rem;
+    > li {
+        margin: 0 1rem;
 
-    a {
-      @extend .fauxbtn;
+        a {
+            @extend .fauxbtn;
 
-      font-weight: $global-weight-normal;
-      text-transform: uppercase;
+            font-weight: $global-weight-normal;
+            text-transform: uppercase;
 
-      /* stylelint-disable */
-      background-image: linear-gradient(
-        360deg,
-        transparent 0,
-        transparent 100%
-      );
-      /* stylelint-enable */
+            /* stylelint-disable */
+            background-image: linear-gradient(
+                360deg,
+                transparent 0,
+                transparent 100%
+            );
+            /* stylelint-enable */
 
-      &:hover,
-      &:focus {
-        /* stylelint-disable */
-        background-image: linear-gradient(
-          360deg,
-          $c-primary 0,
-          $c-primary 100%
-        );
-        /* stylelint-enable */
-      }
+            &:hover,
+            &:focus {
+                /* stylelint-disable */
+                background-image: linear-gradient(
+                    360deg,
+                    $c-primary 0,
+                    $c-primary 100%
+                );
+                /* stylelint-enable */
+            }
+        }
     }
-  }
 
-  > li.is-active {
-    a {
-      background-image: linear-gradient(360deg, $c-primary 0, $c-primary 100%);
+    > li.is-active {
+        a {
+            /* stylelint-disable */
+            background-image: linear-gradient(
+                360deg,
+                $c-primary 0,
+                $c-primary 100%
+            );
+            /* stylelint-enable */
+        }
     }
-  }
 }
