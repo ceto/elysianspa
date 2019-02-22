@@ -10,11 +10,24 @@
 
       font-weight: $global-weight-normal;
       text-transform: uppercase;
-      background-image: linear-gradient(360deg, transparent 0, transparent 100%);
+
+      /* stylelint-disable */
+      background-image: linear-gradient(
+        360deg,
+        transparent 0,
+        transparent 100%
+      );
+      /* stylelint-enable */
 
       &:hover,
       &:focus {
-        background-image: linear-gradient(360deg, $c-primary 0, $c-primary 100%);
+        /* stylelint-disable */
+        background-image: linear-gradient(
+          360deg,
+          $c-primary 0,
+          $c-primary 100%
+        );
+        /* stylelint-enable */
       }
     }
   }
