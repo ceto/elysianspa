@@ -19,8 +19,8 @@
 
     &--full {
         @include breakpoint(desktop) {
-            padding-left: 5%;
-            padding-right: 5%;
+            padding-left: 3.333%;
+            padding-right: 3.333%;
         }
     }
 }
@@ -37,4 +37,10 @@
 
 .swrap--light {
     background-color: rgba($c-primary, 0.5);
+}
+
+.servicelist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    //grid-gap: 2rem;
 }
