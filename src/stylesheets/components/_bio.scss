@@ -1,0 +1,35 @@
+.bio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24.25rem, 1fr));
+    //grid-column-gap: 10%;
+    align-items: center;
+    justify-items: center;
+    background-image: url(../images/white-marble.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bio__foto {
+    max-width: 18rem;
+    text-align: center;
+    margin: 3rem 0 5rem;
+
+    img {
+        border-radius: 50%;
+    }
+
+    figcaption {
+        margin-top: 1.25rem;
+        font-weight: $global-weight-bold;
+        font-family: $header-font-family;
+        font-size: 1.25rem;
+        line-height: 1.4;
+
+        em {
+            display: block;
+            font-style: italic;
+            font-size: 66.666%;
+            font-weight: $global-weight-normal;
+        }
+    }
+}

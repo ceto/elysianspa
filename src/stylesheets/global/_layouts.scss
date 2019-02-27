@@ -2,7 +2,7 @@
 
 .swrap {
     overflow: hidden;
-    padding: calc(3rem + 1.5vw) 1rem;
+    padding: calc(4rem + 2.5vw) 1rem;
     margin: 0 auto;
     width: 100%;
     //max-width: $global-width;
@@ -36,11 +36,31 @@
 }
 
 .swrap--light {
-    background-color: rgba($c-primary, 0.5);
+    background-color: lighten($color: #000, $amount: 95%);
+}
+
+.swrap--dark {
+    background-color: $c-secondary;
 }
 
 .servicelist {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     //grid-gap: 2rem;
+    margin-left: -3.333%;
+    margin-right: -3.333%;
+}
+
+.service {
+    background-image: url(../images/white-marble.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //text-align: center;
+
+    > * {
+        //margin-right: auto;
+        //margin-left: auto;
+        max-width: 46rem;
+    }
 }

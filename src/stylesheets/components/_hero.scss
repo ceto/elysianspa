@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 50% 1fr;
     grid-template-rows: 1fr;
     align-items: center;
+    color: $white;
 
     @include breakpoint(phablet) {
         grid-template-columns: 1fr 33.333% 1fr;
@@ -33,12 +34,15 @@
         font-size: 1.333em;
         line-height: 1.4;
         font-weight: $global-weight-bold;
+        font-family: $header-font-family;
     }
 
     .btn,
     .fauxbtn {
         font-size: 1.125em;
         line-height: 1.125;
+        color: inherit;
+        text-transform: uppercase;
     }
 }
 

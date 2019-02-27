@@ -1,24 +1,25 @@
 .slister {
-    background-color: $body-font-color;
+    background-color: $c-secondary;
     padding-top: 0;
     padding-bottom: 0;
 }
 
 .servicecard {
-    --cardbg: #{$body-font-color};
-    --cardcol: #{$body-background};
-
     position: relative;
-    padding: 20% 2rem 30%;
-    background-color: var(--cardbg);
-    color: var(--cardcol);
+    padding: 20% 10% 30%;
+    color: $white;
     //font-size: 0.875rem;
     transition: all 0.2s ease-in;
 
     &:hover,
     &:focus {
-        --cardcol: #{$body-font-color};
-        --cardbg: #{$body-background};
+        text-shadow: 1px 1px $c-secondary;
+        //background-color: rgba(#fff, 0.05);
+        // box-shadow: 0 0 0 1px rgba(#000, 0.125);
+    }
+
+    &:nth-child(2n) {
+        background-color: rgba(#fff, 0.05);
     }
 }
 
@@ -36,10 +37,10 @@
     transition: inherit;
 
     em {
-        font-weight: $global-weight-normal;
+        font-weight: $global-weight-medium;
         text-transform: none;
         display: block;
         font-size: 0.75em;
-        color: var(--cardcol);
+        color: $white;
     }
 }

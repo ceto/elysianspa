@@ -8,7 +8,8 @@
         a {
             @extend .fauxbtn;
 
-            font-weight: $global-weight-normal;
+            color: $white;
+            font-weight: $global-weight-bold;
             text-transform: uppercase;
 
             /* stylelint-disable */
