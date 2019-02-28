@@ -1,0 +1,31 @@
+.callout {
+    position: relative;
+    color: $white;
+    padding: 5% 7%;
+    text-align: center;
+    font-size: calc(1rem + 0.25vw);
+
+    @include breakpoint(desktop) {
+        font-size: 1.666rem;
+    }
+
+    // border: 3px solid $c-primary;
+    // outline: 1rem solid $white;
+    //mix-blend-mode: multiply;
+    //filter: grayscale(0.75);
+
+    h2 {
+        font-size: 1.875em;
+        line-height: 1.2;
+        margin: 0 0 0.25em;
+    }
+
+    p {
+        font-weight: $global-weight-bold;
+        font-size: 1.125em;
+    }
+
+    .btn {
+        font-size: 0.666em;
+    }
+}

@@ -3,15 +3,15 @@
     padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-column-gap: 2.5%;
     grid-row-gap: 1.666rem;
 }
 
 @media screen and (min-width: 48em) {
-    .testilist {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    // .testilist {
+    //     grid-template-columns: 1fr 1fr 1fr;
+    // }
 }
 
 .testilist > li {
@@ -20,20 +20,26 @@
 }
 
 .testicard {
+    font-size: 0.875rem;
     position: relative;
-    background-color: #202a3c;
     margin: 0 auto;
     padding: calc(1.25rem + 1.5%) calc(1rem + 1.5%);
     border-radius: 0.25rem;
     height: 100%;
     color: $white;
+    background-color: rgba(#fff, 0.05);
+    //background-color: $c-secondary;
+    //border: 0.5rem solid $c-primary;
 }
 
 .testicard p {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
+    font-weight: $global-weight-medium;
+    font-style: italic;
 }
 
 .testicard cite {
+    font-family: $header-font-family;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -41,22 +47,29 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: calc(1.25rem + 1.5%) calc(1rem + 1.5%);
+    padding: calc(1.25rem + 1.5%) calc(1rem + 1.5%) calc(1.25rem + 1.5%);
     display: block;
-    font-weight: 700;
+    font-weight: $global-weight-bold;
     font-style: normal;
     margin: 0;
+    text-transform: uppercase;
+    line-height: 1.25;
+    //color: $c-primary;
 }
 
 .testicard cite img {
-    max-width: 2.666em;
+    max-width: 3.5em;
     border-radius: 50%;
     float: left;
-    margin: 0 0.666em 0 0;
+    margin: -0.5em 0.875em 0 0;
+    border: 3px solid $c-secondary;
 }
 
 .testicard cite span {
     display: block;
-    font-size: 75%;
-    font-weight: 400;
+    font-size: 87.5%;
+    text-transform: none;
+    font-weight: $global-weight-medium;
+    font-family: $body-font-family;
+    //color: $c-primary;
 }

@@ -1,6 +1,11 @@
 .siteheader {
     display: flex;
     align-items: center;
+    position: absolute;
+    //background-color: hsl(0, 0, 16%);
+
+    // @include breakpoint(desktop) {
+    // }
 }
 
 .siteheader__logo {
@@ -11,6 +16,19 @@
 
     img {
         width: 12rem;
+        margin-top: 5%;
+
+        @include breakpoint(tablet) {
+            width: 14rem;
+        }
+
+        @include breakpoint(desktop) {
+            width: 16rem;
+        }
+
+        @include breakpoint(largedesktop) {
+            width: 17rem;
+        }
     }
 }
 

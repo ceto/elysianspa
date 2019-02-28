@@ -1,10 +1,9 @@
 .fauxbtn {
     color: $body-font-color;
-    font-weight: $global-weight-bold;
     font-family: $header-font-family;
     display: inline-block;
     background-image: linear-gradient(360deg, $c-primary 0, $c-primary 100%);
-    background-size: 100% 0.666em;
+    background-size: calc(100% - 0.666em) 0.666em;
     background-repeat: no-repeat;
     background-position: left bottom;
     text-decoration: none;
@@ -22,20 +21,23 @@
 .btn {
     display: inline-block;
     line-height: 1.125;
-    padding: 0.5em 0.75em 0.5em;
-    border: 3px solid $c-primary;
+    padding: 1.125em 1.25em;
+    min-width: 18em;
+    border: 0.125em solid darken($c-primary, 5%);
     color: inherit;
-    //background-color: $c-primary;
+    background-color: $c-primary;
     //color: #fff;
     text-decoration: none;
     text-align: center;
-    //font-family: $header-font-family;
+    font-family: $header-font-family;
     font-weight: $global-weight-bold;
+    text-transform: uppercase;
+    margin: 0 0 0.5em;
 
     &:hover,
     &:focus {
-        background-color: $c-primary;
-        border-color: #fff;
+        background-color: darken($c-primary, 5%);
+        //border-color: #fff;
         color: #fff;
     }
 
@@ -44,4 +46,9 @@
         display: block;
         font-size: 87.5%;
     }
+}
+
+.btn--inverse {
+    background-color: $white;
+    color: $body-font-color;
 }

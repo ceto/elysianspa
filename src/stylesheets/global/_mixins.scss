@@ -1,5 +1,11 @@
 /* stylelint-disable */
 @mixin breakpoint($point) {
+    @if $point == largedesktop {
+        @media (min-width: 100em) {
+            @content;
+        }
+    }
+
     @if $point == desktop {
         @media (min-width: 88em) {
             @content;

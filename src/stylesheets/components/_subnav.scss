@@ -1,0 +1,56 @@
+.subnav {
+    position: absolute;
+    color: $c-primary;
+    font-family: $header-font-family;
+    font-weight: $global-weight-bold;
+    text-transform: lowercase;
+    transform: rotate(-90deg) translateX(-50%);
+    transform-origin: top left;
+    margin-left: -0.25em;
+    top: 50%;
+    left: 1rem;
+    font-size: 0.875rem;
+
+    @include breakpoint(tablet) {
+        left: 2rem;
+    }
+
+    @include breakpoint(largedesktop) {
+        left: 5%;
+    }
+
+    h3 {
+        display: inline-block;
+        font-size: 1em;
+    }
+}
+
+.menu--submenu {
+    display: inline-block;
+    list-style: none;
+    line-height: 1;
+
+    > li {
+        display: inline;
+
+        &:not(:last-child()) {
+            &::after {
+                content: "•";
+                margin: 0 0.5em;
+                //content: " · ";
+                //font-weight: $global-weight-normal;
+                //color: $white;
+            }
+        }
+
+        > a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+    }
+}

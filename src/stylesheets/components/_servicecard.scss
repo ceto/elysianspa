@@ -1,3 +1,35 @@
+.servicelist {
+    display: grid;
+    grid-template-columns: 1fr;
+    //grid-gap: 2rem;
+    // margin-left: -1rem;
+    // margin-right: -1rem;
+
+    @include breakpoint(phablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint(desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+        // margin-left: -10rem;
+        // margin-right: -10rem;
+    }
+}
+
+.service {
+    background-image: url(../images/white-marble.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    //text-align: center;
+
+    > * {
+        //margin-right: auto;
+        //margin-left: auto;
+        max-width: 46rem;
+    }
+}
+
 .slister {
     background-color: $c-secondary;
     padding-top: 0;
@@ -6,7 +38,7 @@
 
 .servicecard {
     position: relative;
-    padding: 20% 10% 30%;
+    padding: calc(4rem + 5%) 1rem calc(4rem + 5%);
     color: $white;
     //font-size: 0.875rem;
     transition: all 0.2s ease-in;
@@ -14,18 +46,42 @@
     &:hover,
     &:focus {
         text-shadow: 1px 1px $c-secondary;
-        //background-color: rgba(#fff, 0.05);
-        // box-shadow: 0 0 0 1px rgba(#000, 0.125);
     }
 
-    &:nth-child(2n) {
+    &:nth-child(2) {
+        //background-color: lighten($color: $c-secondary, $amount: 2%);
         background-color: rgba(#fff, 0.05);
+    }
+
+    &:last-child() {
+        @include breakpoint(phablet) {
+            background-color: rgba(#fff, 0.05);
+        }
+
+        @include breakpoint(desktop) {
+            background-color: transparent;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include breakpoint(desktop) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include breakpoint(largedesktop) {
+        padding-left: 15%;
+        padding-right: 15%;
     }
 }
 
 .servicecard__action {
     position: absolute;
-    bottom: 10%;
+    bottom: calc(2rem + 5%);
     color: var(--cardcol);
 }
 
