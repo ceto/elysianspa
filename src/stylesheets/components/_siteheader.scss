@@ -1,7 +1,9 @@
 .siteheader {
     display: flex;
     align-items: center;
-    position: absolute;
+    background-color: $c-secondary;
+    //position: absolute;
+    color: $white;
     //background-color: hsl(0, 0, 16%);
 
     // @include breakpoint(desktop) {
