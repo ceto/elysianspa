@@ -56,6 +56,10 @@
     }
 }
 
+.swrap--nobtm {
+    padding-bottom: 0;
+}
+
 .swrap--light {
     background-color: lighten($color: #000, $amount: 95%);
 }
@@ -82,7 +86,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        mix-blend-mode: multiply;
-        filter: grayscale(0.75);
+        //mix-blend-mode: multiply;
+        //filter: grayscale(0.75);
     }
 }

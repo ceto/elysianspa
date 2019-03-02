@@ -39,3 +39,23 @@
         }
     }
 }
+
+.menu--vert {
+    list-style: none;
+    display: inline-block;
+    font-style: italic;
+
+    > li {
+        display: inline-block;
+
+        &:not(:last-child())::after {
+            content: " • ";
+            //display: inline-block;
+            //margin: 0 0.5em;
+        }
+
+        a {
+            color: inherit;
+        }
+    }
+}

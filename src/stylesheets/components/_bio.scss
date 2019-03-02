@@ -1,24 +1,26 @@
 .bio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24.25rem, 1fr));
-    //grid-column-gap: 10%;
+    grid-column-gap: 10%;
     align-items: center;
     justify-items: center;
-    //background-image: url(../images/white-marble.jpg);
+    background-image: url(../images/white-marble.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .bio__foto {
-    max-width: 22rem;
+    max-width: 30rem;
     text-align: center;
-    margin: 3rem 0 5rem;
+    margin: 3rem 0 3rem;
+    //background-color: $c-primary;
 
     img {
-        border-radius: 50%;
+        //border-radius: 50%;
         //border: 0.5rem solid hsl(0, 0%, 75);
         //mix-blend-mode: multiply;
-        filter: grayscale(0.75);
+        filter: grayscale(0.25);
+        border: 0.5rem solid $c-primary;
     }
 
     figcaption {
@@ -27,6 +29,7 @@
         font-family: $header-font-family;
         font-size: 1.25rem;
         line-height: 1.4;
+        //background-color: #fff;
 
         em {
             display: block;
