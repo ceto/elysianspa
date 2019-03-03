@@ -8,7 +8,7 @@
     //background-color: hsl(0, 0, 16%);
     padding: 0 0 calc(3rem + 2.5vw) 1rem;
     background-color: $c-secondary;
-    // background-image: linear-gradient(135deg, $c-secondary 60%, lighten($c-secondary, 2%) 60%, lighten($c-secondary, 2%) 100%);
+    background-image: linear-gradient(135deg, $c-secondary 60%, lighten($c-secondary, 2%) 60%, lighten($c-secondary, 2%) 100%);
     color: $white;
 
     @include breakpoint(phablet) {

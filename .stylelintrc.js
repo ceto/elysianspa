@@ -5,6 +5,7 @@ module.exports = {
         "at-rule-no-unknown": null,
         "scss/at-rule-no-unknown": true,
         "no-descending-specificity": null,
-        indentation: 4
+        indentation: 4,
+        "max-line-length": 200
     }
 };
