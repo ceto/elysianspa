@@ -89,3 +89,17 @@
         //filter: grayscale(0.75);
     }
 }
+
+.feles {
+    // //background-image: url(../images/white-marble.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // //text-align: center;
+
+    > * {
+        //margin-right: auto;
+        //margin-left: auto;
+        max-width: 50rem;
+    }
+}
