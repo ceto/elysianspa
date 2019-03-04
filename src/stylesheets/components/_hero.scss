@@ -37,6 +37,12 @@
     }
 }
 
+.hero--light {
+    background-color: lighten($color: #000, $amount: 95%);
+    color: $body-font-color;
+    padding-top: 4rem;
+}
+
 .hero__content {
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
@@ -63,12 +69,14 @@
         line-height: 1.4;
         font-weight: $global-weight-bold;
         font-family: $header-font-family;
-    }
 
-    a {
-        @extend .fauxbtn;
-        // color: $c-primary;
-        // color: inherit;
+        a {
+            @extend .fauxbtn;
+
+            text-transform: none !important;
+            // color: $c-primary;
+            // color: inherit;
+        }
     }
 
     .btn,
@@ -104,7 +112,7 @@
         height: 100%;
         object-fit: cover;
         object-position: 20% 50%;
-        border: 0.4333rem solid hsl(0, 0%, 75);
+        border: 0.4333rem solid $c-primary;
         border-right-width: 0;
         mix-blend-mode: multiply;
         filter: grayscale(0.75);

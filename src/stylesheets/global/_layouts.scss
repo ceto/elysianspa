@@ -40,6 +40,18 @@
     }
 }
 
+.swrap--keskeny {
+    @include breakpoint(tablet) {
+        padding-left: calc(50vw - #{$global-width/4});
+        padding-right: calc(50vw - #{$global-width/4});
+    }
+
+    @include breakpoint(largedesktop) {
+        padding-left: calc(50vw - #{$global-width/4});
+        padding-right: calc(50vw - #{$global-width/4});
+    }
+}
+
 .swrap--narrow {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -101,5 +113,15 @@
         //margin-right: auto;
         //margin-left: auto;
         max-width: 50rem;
+    }
+}
+
+.felezett {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10%;
+
+    @include breakpoint(tablet) {
+        grid-template-columns: 1fr 1fr;
     }
 }
