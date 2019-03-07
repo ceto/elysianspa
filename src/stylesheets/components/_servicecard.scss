@@ -1,7 +1,6 @@
 .slister {
-    background-color: $c-secondary;
-    padding-top: 0;
-    padding-bottom: 0;
+    background-color: $c-lightrose;
+    padding-bottom: calc(4rem + 2.5vw);
 }
 
 .servicelist {
@@ -24,29 +23,29 @@
 
 .servicecard {
     position: relative;
-    padding: calc(14rem + 5%) 1rem calc(4rem + 5%);
-    color: $white;
+    padding: calc(4rem + 5%) 1rem calc(4rem + 5%);
+    //color: $white;
     //font-size: 0.875rem;
     transition: all 0.2s ease-in;
 
     &:hover,
     &:focus {
-        text-shadow: 1px 1px $c-secondary;
+        //text-shadow: 1px 1px $c-secondary;
     }
 
     &:nth-child(2) {
         //background-color: lighten($color: $c-secondary, $amount: 2%);
-        background-color: rgba(#fff, 0.05);
+        //background-color: rgba(#fff, 0.05);
     }
 
     &:last-child() {
-        @include breakpoint(phablet) {
-            background-color: rgba(#fff, 0.05);
-        }
+        // @include breakpoint(phablet) {
+        //     background-color: rgba(#fff, 0.05);
+        // }
 
-        @include breakpoint(desktop) {
-            background-color: transparent;
-        }
+        // @include breakpoint(desktop) {
+        //     background-color: transparent;
+        // }
     }
 
     @include breakpoint(tablet) {
@@ -68,10 +67,11 @@
 .servicecard__action {
     position: absolute;
     bottom: calc(2rem + 5%);
-    color: var(--cardcol);
+    //color: var(--cardcol);
 }
 
 .servicecard__title {
+    font-size: 1.333em;
     text-transform: uppercase;
     color: $c-primary;
     line-height: 1.25;
@@ -83,6 +83,6 @@
         text-transform: none;
         display: block;
         font-size: 0.875em;
-        color: $white;
+        color: $body-font-color;
     }
 }

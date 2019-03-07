@@ -1,11 +1,13 @@
 $c-primary: #f86491; //#ff69b4;
 $c-secondary: #172335; //#0e2241;
 $c-ametist: #675682;
+$c-lightrose: lighten($c-primary, 30%);
+$c-darkgray: #2e2e2e;
 $white: #ededed;
 $body-font-family: "Raleway", sans-serif;
 $header-font-family: "Fahkwang", sans-serif;
-$body-font-color: #001b36;
-$body-background: #ededed;
+$body-font-color: $c-secondary;
+$body-background: $white;
 $global-weight-bold: 700;
 $global-weight-medium: 500;
 $global-weight-normal: 400;

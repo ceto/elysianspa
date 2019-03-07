@@ -51,3 +51,8 @@ a {
         font-size: 1.25rem;
     }
 }
+
+.lead--accent,
+.lead--accent > p {
+    color: $c-primary;
+}

@@ -38,7 +38,7 @@
 }
 
 .hero--light {
-    background-color: lighten($color: #000, $amount: 95%);
+    background-color: $c-lightrose;
     color: $body-font-color;
     padding-top: 4rem;
 }

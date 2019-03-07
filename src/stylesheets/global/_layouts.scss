@@ -72,7 +72,7 @@
 }
 
 .swrap--light {
-    background-color: lighten($color: #000, $amount: 95%);
+    background-color: lighten($color: $c-primary, $amount: 30%);
 }
 
 .swrap--rose {
@@ -81,7 +81,7 @@
 }
 
 .swrap--dark {
-    background-color: $c-secondary;
+    background-color: $c-darkgray;
     color: $white;
 }
 
@@ -110,9 +110,9 @@
     // //text-align: center;
 
     > * {
-        //margin-right: auto;
-        //margin-left: auto;
-        max-width: 50rem;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 55rem;
     }
 }
 

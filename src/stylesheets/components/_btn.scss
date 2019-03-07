@@ -1,5 +1,5 @@
 .fauxbtn {
-    color: $body-font-color;
+    color: inherit;
     font-family: $header-font-family;
     display: inline-block;
     background-image: linear-gradient(360deg, $c-primary 0, $c-primary 100%);
