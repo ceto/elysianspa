@@ -5,16 +5,16 @@
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    //background-color: hsl(0, 0, 16%);
+    background-color: $c-lightrose;
     padding: 0 0 calc(3rem + 2.5vw) 1rem;
-    background-color: $c-secondary;
+    // background-color: $c-secondary;
     // background-image: linear-gradient(
     //     135deg,
     //     $c-secondary 60%,
     //     lighten($c-secondary, 2%) 60%,
     //     lighten($c-secondary, 2%) 100%
     // );
-    color: $white;
+    //color: $white;
 
     @include breakpoint(phablet) {
         //grid-template-columns: 1fr 33.333% 1fr;

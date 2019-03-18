@@ -1,5 +1,5 @@
 .slister {
-    background-color: $c-lightrose;
+    background-color: $c-darkgray;
     padding-bottom: calc(4rem + 2.5vw);
 }
 
@@ -24,7 +24,8 @@
 .servicecard {
     position: relative;
     padding: calc(4rem + 5%) 1rem calc(4rem + 5%);
-    //color: $white;
+    color: $white;
+    color: $c-lightrose;
     //font-size: 0.875rem;
     transition: all 0.2s ease-in;
 
@@ -83,6 +84,6 @@
         text-transform: none;
         display: block;
         font-size: 0.875em;
-        color: $body-font-color;
+        color: $c-lightrose;
     }
 }
