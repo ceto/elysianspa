@@ -5,7 +5,8 @@
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    background-color: $c-lightrose;
+    background-color: $c-darkgray;
+    color: $c-lightrose;
     padding: calc(3rem + 2.5vw) 0 calc(3rem + 2.5vw) 1rem;
     // background-color: $c-secondary;
     // background-image: linear-gradient(
@@ -37,19 +38,13 @@
     }
 }
 
-.hero--dark {
-    background-color: $c-darkgray;
-    color: $c-lightrose;
+.hero--light {
+    background-color: transparent;
+    color: $body-font-color;
 }
 
 .hero--notop {
     padding-top: 0;
-}
-
-.hero--light {
-    background-color: $c-lightrose;
-    color: $body-font-color;
-    padding-top: 4rem;
 }
 
 .hero__content {

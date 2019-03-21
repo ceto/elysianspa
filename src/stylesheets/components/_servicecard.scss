@@ -1,5 +1,6 @@
 .slister {
-    background-color: $c-lightrose;
+    background-color: $c-darkgray;
+    color: $c-lightrose;
     //padding-bottom: calc(4rem + 2.5vw);
 }
 
@@ -64,6 +65,6 @@
         display: block;
         font-size: 0.875em;
         color: $c-lightrose;
-        color: $body-font-color;
+        //color: $body-font-color;
     }
 }

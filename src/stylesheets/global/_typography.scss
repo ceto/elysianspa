@@ -48,11 +48,16 @@ a {
     font-weight: $global-weight-medium;
 
     @include breakpoint(phablet) {
-        font-size: 1.5rem;
+        font-size: 1.333rem;
     }
 }
 
 .lead--accent,
 .lead--accent > p {
     color: $c-lightrose;
+}
+
+.lead--narrow {
+    max-width: 44em;
+    //margin: 0 0 0 auto;
 }

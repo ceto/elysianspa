@@ -7,8 +7,9 @@
     font-size: calc(1.75rem + 0.5vw);
 
     em {
-        font-family: $body-font-family;
+        // font-family: $body-font-family;
         font-weight: $global-weight-medium;
+        //font-weight: $global-weight-bold;
         text-transform: none;
         display: block;
         font-size: 0.75em;
@@ -20,6 +21,10 @@
     color: $c-primary;
 
     em {
-        color: $c-lightrose;
+        .swrap--dark & {
+            color: $c-lightrose;
+        }
+
+        color: $body-font-color;
     }
 }

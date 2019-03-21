@@ -1,7 +1,7 @@
 .bio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24.25rem, 1fr));
-    grid-column-gap: 10%;
+    grid-column-gap: 7%;
     align-items: center;
     justify-items: center;
     //background-image: url(../images/white-marble.jpg);
@@ -12,7 +12,7 @@
 .bio__foto {
     //max-width: 35rem;
     text-align: center;
-    margin: 3rem 0 3rem;
+    margin: 2rem 0 2rem;
     //background-color: $c-primary;
 
     img {

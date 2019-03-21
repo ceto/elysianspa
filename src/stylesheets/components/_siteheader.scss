@@ -1,7 +1,9 @@
 .siteheader {
     display: flex;
     align-items: center;
-    background-color: $c-lightrose;
+    background-color: $c-darkgray;
+    color: $c-lightrose;
+
     //position: absolute;
     //color: $white;
     //background-color: hsl(0, 0, 16%);
@@ -10,13 +12,14 @@
     // }
 }
 
-.siteheader--dark {
-    background-color: $c-darkgray;
-    color: $c-lightrose;
+.siteheader--light {
+    color: $body-font-color;
+    background-color: $c-lightrose;
 }
 
 .siteheader--transp {
     background-color: transparent;
+    color: $body-font-color;
 }
 
 .siteheader__logo {
