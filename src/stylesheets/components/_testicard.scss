@@ -44,9 +44,11 @@
 }
 
 .testicard p {
+    //text-align: center;
     margin-bottom: 4rem;
     font-weight: $global-weight-medium;
     font-style: italic;
+    //text-transform: uppercase;
 }
 
 .testicard cite {

@@ -1,8 +1,9 @@
 .pricetable {
-    border: 0.5rem solid scale-color($c-primary, $lightness: 15%);
+    //border: 0.5rem solid scale-color($c-primary, $lightness: 15%);
     padding: 10% 7.5% 5%;
     color: scale-color($body-font-color, $lightness: 15%);
-    background-color: $body-background;
+    font-size: 1.125rem;
+    //background-color: $body-background;
     //box-shadow: 0 0 1px 0 rgba(#000,.125);
     @include breakpoint(large) {
         //font-size:1.125rem;
@@ -55,7 +56,7 @@ dl.pricelist {
         //background-color: $body-background;
         max-width: calc(100% - 6em);
         //background-color: red;
-        margin: 0 0 1.5em;
+        margin: 0 0 1em;
         //padding-right:.5em;
         font-family: $header-font-family;
         font-weight: $global-weight-bold;
@@ -95,10 +96,12 @@ dl.pricelist {
     dt.selector {
         @include clearfix();
         //font-size:1.125em;
-        font-weight: $global-weight-normal;
+        //font-weight: $global-weight-normal;
         //font-family: $body-font-family;
-        margin: 1.5em 0 1.5em;
-        color: $body-font-color;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 0.5em;
+        margin: 2em 0 1em;
+        //color: $body-font-color;
         //color:$secondary-color;
         float: none;
         clear: both;
@@ -116,7 +119,7 @@ dl.pricelist {
         float: right;
         max-width: 6em;
         white-space: nowrap;
-        margin: 0 0 1.125em;
+        margin: 0 0 1em;
         text-align: right;
 
         span {

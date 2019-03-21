@@ -47,8 +47,8 @@
     }
 
     @include breakpoint(largedesktop) {
-        padding-left: calc(50vw - #{$global-width/4});
-        padding-right: calc(50vw - #{$global-width/4});
+        padding-left: calc(50vw - #{$global-width/3});
+        padding-right: calc(50vw - #{$global-width/3});
     }
 }
 
