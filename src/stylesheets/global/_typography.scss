@@ -44,11 +44,11 @@ a {
 
 .lead,
 .lead > p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: $global-weight-medium;
 
     @include breakpoint(phablet) {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 }
 

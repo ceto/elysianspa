@@ -1,12 +1,12 @@
 .slister {
-    background-color: $c-darkgray;
-    padding-bottom: calc(4rem + 2.5vw);
+    background-color: $c-lightrose;
+    //padding-bottom: calc(4rem + 2.5vw);
 }
 
 .servicelist {
     display: grid;
     grid-template-columns: 1fr;
-    //grid-gap: 2rem;
+    grid-gap: 2rem 7%;
     // margin-left: -1rem;
     // margin-right: -1rem;
 
@@ -15,7 +15,7 @@
     }
 
     @include breakpoint(desktop) {
-        grid-template-columns: 1fr 1fr 1fr;
+        //grid-template-columns: 1fr 1fr 1fr;
         // margin-left: -10rem;
         // margin-right: -10rem;
     }
@@ -23,46 +23,25 @@
 
 .servicecard {
     position: relative;
-    padding: calc(4rem + 5%) 1rem calc(4rem + 5%);
-    color: $white;
-    color: $c-lightrose;
-    //font-size: 0.875rem;
+    padding: 0 0 calc(4rem + 5%);
+    //color: $white;
+    //color: $c-lightrose;
+
     transition: all 0.2s ease-in;
 
-    &:hover,
-    &:focus {
-        //text-shadow: 1px 1px $c-secondary;
-    }
-
-    &:nth-child(2) {
-        //background-color: lighten($color: $c-secondary, $amount: 2%);
-        //background-color: rgba(#fff, 0.05);
-    }
-
-    &:last-child() {
-        // @include breakpoint(phablet) {
-        //     background-color: rgba(#fff, 0.05);
-        // }
-
-        // @include breakpoint(desktop) {
-        //     background-color: transparent;
-        // }
-    }
-
-    @include breakpoint(tablet) {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
     @include breakpoint(desktop) {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        font-size: 1.125rem;
     }
 
-    @include breakpoint(largedesktop) {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
+    // @include breakpoint(desktop) {
+    //     padding-left: 2rem;
+    //     padding-right: 2rem;
+    // }
+
+    // @include breakpoint(largedesktop) {
+    //     padding-left: 15%;
+    //     padding-right: 15%;
+    // }
 }
 
 .servicecard__action {
@@ -85,5 +64,6 @@
         display: block;
         font-size: 0.875em;
         color: $c-lightrose;
+        color: $body-font-color;
     }
 }

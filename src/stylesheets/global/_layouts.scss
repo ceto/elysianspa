@@ -71,6 +71,10 @@
     padding-bottom: 0;
 }
 
+.swrap--notop {
+    padding-top: 0;
+}
+
 .swrap--light {
     background-color: lighten($color: $c-primary, $amount: 30%);
 }

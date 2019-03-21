@@ -10,6 +10,11 @@
     // }
 }
 
+.siteheader--dark {
+    background-color: $c-darkgray;
+    color: $c-lightrose;
+}
+
 .siteheader__logo {
     //display: flex;
     align-items: center;
