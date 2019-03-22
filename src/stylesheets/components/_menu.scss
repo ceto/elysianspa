@@ -1,7 +1,11 @@
 .menu--main {
     list-style: none;
-    display: flex;
+    display: none;
     font-size: 0.75rem;
+
+    @include breakpoint(phablet) {
+        display: flex;
+    }
 
     @include breakpoint(tablet) {
         font-size: 0.875rem;
@@ -56,6 +60,50 @@
 
         a {
             color: inherit;
+        }
+    }
+}
+
+.menu--social {
+    list-style: none;
+    display: flex;
+    //justify-content: center;
+
+    > li {
+        width: 1.5rem;
+        margin: 0 0.125rem;
+    }
+}
+
+.menu--mobile {
+    width: 100%;
+    font-size: 1.25rem;
+    font-size: calc(1rem + 1vw);
+    margin: 0;
+    padding: 0;
+
+    > li {
+        margin: 0.666em 0;
+
+        a {
+            @extend .fauxbtn;
+
+            margin-right: -0.666em;
+            font-weight: $global-weight-bold;
+            color: inherit;
+            text-transform: uppercase;
+            background-image: linear-gradient(360deg, transparent 0, transparent 100%);
+
+            &:hover,
+            &:focus {
+                background-image: linear-gradient(360deg, $c-primary 0, $c-primary 100%);
+            }
+        }
+    }
+
+    > li.is-active {
+        a {
+            background-image: linear-gradient(360deg, $c-primary 0, $c-primary 100%);
         }
     }
 }

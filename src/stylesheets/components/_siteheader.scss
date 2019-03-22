@@ -57,3 +57,15 @@
         white-space: nowrap;
     }
 }
+
+.menubutton {
+    @extend .fauxbtn;
+
+    text-transform: uppercase;
+    font-weight: $global-weight-bold;
+    margin-right: -0.666em;
+
+    @include breakpoint(phablet) {
+        display: none !important;
+    }
+}

@@ -17,6 +17,16 @@ if (myElement) {
     }).mount();
 }
 
+document.querySelector(".menubutton").addEventListener("click", function() {
+    document.querySelector(".mobilepanel").classList.toggle("is-active");
+    document.querySelector("body").classList.toggle("mobilepanel-is-active");
+});
+
+document.querySelector(".mobilepanelclose").addEventListener("click", function() {
+    document.querySelector(".mobilepanel").classList.remove("is-active");
+    document.querySelector("body").classList.remove("mobilepanel-is-active");
+});
+
 // Add your scripts here
 var fuge = function nothing(params) {
     var i = 1;

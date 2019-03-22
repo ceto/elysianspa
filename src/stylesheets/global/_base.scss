@@ -17,6 +17,10 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
     -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+
+    &.mobilepanel-is-active {
+        overflow: hidden;
+    }
 }
 
 // Set box-sizing globally to handle padding and border widths
