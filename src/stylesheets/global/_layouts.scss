@@ -38,6 +38,17 @@
             padding-right: 5%;
         }
     }
+
+    &.patternized {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center top;
+
+        @media screen and (orientation: portrait) {
+            background-size: auto 100vh;
+        }
+    }
 }
 
 .swrap--keskeny {
@@ -77,6 +88,10 @@
 
 .swrap--light {
     background-color: lighten($color: $c-primary, $amount: 30%);
+
+    &.patternized {
+        background-image: url(../images/leaves-light.jpg);
+    }
 }
 
 .swrap--rose {
@@ -87,6 +102,10 @@
 .swrap--dark {
     background-color: $c-darkgray;
     color: $white;
+
+    &.patternized {
+        background-image: url(../images/leaves-dark.jpg);
+    }
 }
 
 .promoblock {

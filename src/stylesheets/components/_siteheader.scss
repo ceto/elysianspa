@@ -2,6 +2,11 @@
     display: flex;
     align-items: center;
     background-color: $c-darkgray;
+    background-image: url(../images/leaves-dark.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
     color: $c-lightrose;
 
     //position: absolute;
@@ -10,16 +15,21 @@
 
     // @include breakpoint(desktop) {
     // }
+    @media screen and (orientation: portrait) {
+        background-size: auto 100vh;
+    }
 }
 
 .siteheader--light {
     color: $body-font-color;
     background-color: $c-lightrose;
+    background-image: none;
 }
 
 .siteheader--transp {
     background-color: transparent;
     color: $body-font-color;
+    background-image: none;
 }
 
 .siteheader__logo {

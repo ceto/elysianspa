@@ -1,7 +1,15 @@
 .slister {
     background-color: $c-darkgray;
     color: $c-lightrose;
-    //padding-bottom: calc(4rem + 2.5vw);
+    background-image: url(../images/leaves-dark.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+
+    @media screen and (orientation: portrait) {
+        background-size: auto 100vh;
+    }
 }
 
 .servicelist {

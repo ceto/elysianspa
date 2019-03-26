@@ -6,6 +6,11 @@
     margin: 0 auto;
     width: 100%;
     background-color: $c-darkgray;
+    background-image: url(../images/leaves-dark.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
     color: $c-lightrose;
     padding: calc(3rem + 2.5vw) 0 calc(3rem + 2.5vw) 1rem;
     // background-color: $c-secondary;
@@ -18,7 +23,7 @@
     //color: $white;
 
     @include breakpoint(phablet) {
-        //grid-template-columns: 1fr 33.333% 1fr;
+        grid-template-columns: 1fr 25% 1fr;
         //padding-right: 1rem;
     }
 
@@ -36,11 +41,16 @@
         padding-left: calc(50vw - #{$global-width/2});
         padding-right: calc(50vw - #{$global-width/2});
     }
+
+    @media screen and (orientation: portrait) {
+        background-size: auto 100vh;
+    }
 }
 
 .hero--light {
     background-color: transparent;
     color: $body-font-color;
+    background-image: none;
 }
 
 .hero--notop {
@@ -57,11 +67,15 @@
 
     @include breakpoint(phablet) {
         grid-column: 1 / span 2;
-        padding-right: 10%;
+        padding-right: 0;
+    }
+
+    @include breakpoint(tablet) {
+        font-size: 1.333rem;
     }
 
     @include breakpoint(desktop) {
-        font-size: 1.5rem;
+        font-size: 1.666rem;
     }
 
     p {
