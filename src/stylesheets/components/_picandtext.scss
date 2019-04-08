@@ -1,4 +1,4 @@
-.bio {
+.picandtext {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24.25rem, 1fr));
     grid-column-gap: 7%;
@@ -9,7 +9,7 @@
     background-size: cover;
 }
 
-.bio__foto {
+.picandtext__foto {
     //max-width: 35rem;
     text-align: center;
     margin: 2rem 0 2rem;

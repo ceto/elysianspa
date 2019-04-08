@@ -67,6 +67,10 @@
     margin: 0 0 1em;
     transition: inherit;
 
+    a {
+        text-decoration: none;
+    }
+
     em {
         font-weight: $global-weight-medium;
         text-transform: none;

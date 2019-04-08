@@ -63,7 +63,7 @@
         padding-right: calc(50vw - #{$global-width/4});
     }
 
-    @include breakpoint(largedesktop) {
+    @include breakpoint(desktop) {
         padding-left: calc(50vw - #{$global-width/3});
         padding-right: calc(50vw - #{$global-width/3});
     }
