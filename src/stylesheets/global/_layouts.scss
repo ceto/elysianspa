@@ -154,3 +154,17 @@
         grid-template-columns: 1fr 1fr;
     }
 }
+
+.harmas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-gap: 7% 2rem;
+
+    @include breakpoint(tablet) {
+        //grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint(desktop) {
+        //grid-template-columns: 1fr 1fr 1fr;
+    }
+}
