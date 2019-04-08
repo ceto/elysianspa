@@ -5,6 +5,7 @@
 @import "global/base";
 @import "global/typography";
 @import "global/layouts";
+@import "components/toprow";
 @import "components/siteheader";
 @import "components/sitefooter";
 @import "components/btn";
@@ -18,6 +19,7 @@
 @import "components/callout";
 @import "components/pricetable";
 @import "components/mobilepanel";
+@import "components/imageswipe";
 
 // Required Core Stylesheet
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
