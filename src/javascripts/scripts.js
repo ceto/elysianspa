@@ -3,6 +3,15 @@
 // window.jQuery = $;
 // window.$ = $;
 
+
+
+// Add your scripts here
+
+import PhotoSwipe from 'photoswipe';
+import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
+//window.PhotoSwipe = PhotoSwipe;
+//window.PhotoSwipeUI_Default = PhotoSwipeUI_Default;
+
 import Glide from "@glidejs/glide";
 //import Glide, { Controls, Breakpoints } from "@glidejs/glide/dist/glide.modular.esm";
 
@@ -27,12 +36,4 @@ document.querySelector(".mobilepanelclose").addEventListener("click", function()
     document.querySelector("body").classList.remove("mobilepanel-is-active");
 });
 
-// Add your scripts here
-var fuge = function nothing(params) {
-    var i = 1;
-    if (true) {
-        i++;
-    } else {
-        return i;
-    }
-};
+

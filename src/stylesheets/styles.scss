@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Fahkwang:400,400i,700|Raleway:400,400i,500,500i,700");
 @import "~reset-css"; // Load CSS Reset from NPM
 @import "global/variables";
+@import "node_modules/flexboxgrid-sass/flexboxgrid.scss";
 @import "global/mixins";
 @import "global/base";
 @import "global/typography";

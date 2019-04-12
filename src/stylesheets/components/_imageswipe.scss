@@ -35,23 +35,28 @@
     a {
         display: block;
         height: 100%;
+        width: 100%;
+        background-color: $c-lightrose;
+        padding: 5px;
+        border: 1px solid darken($c-lightrose, 2.5%);
     }
 
     img {
         height: 100%;
+        transition: all 0.2s ease;
     }
 
     .imageswipe--tiny & {
         height: 33.33vw;
-        max-height: 10rem;
+        max-height: 15rem;
         margin-left: 0.9375rem;
 
         a {
-            background-color: $c-primary;
+            //background-color: $c-primary;
 
             &:hover,
             &:focus {
-                background-color: #fff;
+                //background-color: #fff;
 
                 img {
                     mix-blend-mode: normal;
